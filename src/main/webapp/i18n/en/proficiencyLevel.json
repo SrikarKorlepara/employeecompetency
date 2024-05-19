@@ -1,0 +1,10 @@
+{
+  "employeeinfoApp": {
+    "ProficiencyLevel": {
+      "null": "",
+      "BEGINNER": "BEGINNER",
+      "INTERMEDIATE": "INTERMEDIATE",
+      "PROFICIENT": "PROFICIENT"
+    }
+  }
+}

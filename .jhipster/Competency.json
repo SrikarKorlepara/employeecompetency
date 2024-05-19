@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240519082239"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "competencyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "competencyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Competency",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "employeeId",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "competency",
+      "relationshipName": "employee",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

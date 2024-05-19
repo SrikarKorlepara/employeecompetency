@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240519082241"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "completionStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "completionDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "EmployeeTraining",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "trainingProgram",
+      "relationshipName": "trainingProgram",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "employeeTraining",
+      "relationshipName": "employee",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

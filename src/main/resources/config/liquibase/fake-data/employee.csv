@@ -1,0 +1,11 @@
+id;employee_id;first_name;last_name;email;phone;position;date_of_joining;status
+1;24152;Janick;Beahan;Devonte5@gmail.com;774-738-1842;ARCHITECT;2024-05-18;INACTIVE
+2;12099;Gertrude;Murphy;Oma15@yahoo.com;720.495.4193 x652;SOFTWARE_ENGINEER;2024-05-18;ACTIVE
+3;8532;Dwight;Schuster;Alverta_Marquardt32@gmail.com;767-910-1666 x44881;MANAGER;2024-05-18;TERMINATED
+4;7709;Ewell;Corwin;Ciara75@yahoo.com;826.807.9647 x2573;TESTER;2024-05-18;INACTIVE
+5;14746;Courtney;Gorczany;Courtney38@gmail.com;(282) 305-9628;TRAINEE;2024-05-19;ACTIVE
+6;10685;Destin;Ratke;Antonina_Murphy@hotmail.com;1-845-589-9137;BUSINESS_ANALYST;2024-05-18;ACTIVE
+7;32169;Sarai;Daugherty-Reichel;Austyn_Collins@yahoo.com;1-653-814-7598 x592;TESTER;2024-05-19;TERMINATED
+8;13369;Estel;Hessel;Vickie_Wehner91@yahoo.com;473-645-4618 x82236;SOFTWARE_ENGINEER;2024-05-18;TERMINATED
+9;22550;Evan;Becker;Roman_Wolff@yahoo.com;287-493-3874 x84167;BUSINESS_ANALYST;2024-05-18;INACTIVE
+10;28687;Micah;Gislason;Trisha.Rogahn@hotmail.com;272-920-5034 x369;ARCHITECT;2024-05-18;TERMINATED

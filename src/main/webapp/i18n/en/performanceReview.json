@@ -1,0 +1,29 @@
+{
+  "employeeinfoApp": {
+    "performanceReview": {
+      "home": {
+        "title": "Performance Reviews",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Performance Review",
+        "createOrEditLabel": "Create or edit a Performance Review",
+        "notFound": "No Performance Reviews found"
+      },
+      "created": "A new Performance Review is created with identifier {{ param }}",
+      "updated": "A Performance Review is updated with identifier {{ param }}",
+      "deleted": "A Performance Review is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Performance Review {{ id }}?"
+      },
+      "detail": {
+        "title": "Performance Review"
+      },
+      "id": "ID",
+      "reviewId": "Review Id",
+      "reviewDate": "Review Date",
+      "comments": "Comments",
+      "overallRating": "Overall Rating",
+      "employee": "Employee",
+      "reviewer": "Reviewer"
+    }
+  }
+}

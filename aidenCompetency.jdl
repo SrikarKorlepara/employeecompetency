@@ -1,0 +1,105 @@
+/*application {
+  config {
+    baseName aidenCompetency
+    reactive false
+    packageName com.aidenai.competency
+    applicationType microservice
+    authenticationType oauth2
+    buildTool maven
+    clientFramework reactX
+    databaseType sql
+    devDatabaseType mysql
+    prodDatabaseType mysql
+    searchEngine false
+    enableHibernateCache false
+    serverPort 8008
+    testFrameworks [cypress]
+  }
+  entities Department, Employee, Competency, TrainingProgram, EmployeeTraining, PerformanceReview
+}*/
+
+
+entity Department {
+    departmentId Integer,
+    departmentName String
+}
+
+entity Employee {
+    employeeId Integer,
+    firstName String,
+    lastName String,
+    email String,
+    phone String,
+    position EmployeePosition,
+    dateOfJoining LocalDate,
+    status EmployeeStatus,
+}
+
+entity Competency {
+    competencyId Integer,
+    competencyName String,
+    description TextBlob
+}
+
+entity TrainingProgram {
+    trainingId Integer ,
+    trainingName String,
+    description TextBlob,
+    startDate LocalDate,
+    endDate LocalDate
+}
+
+entity EmployeeTraining {
+    completionStatus String,
+    completionDate LocalDate
+}
+
+entity PerformanceReview {
+    reviewId Integer,
+    reviewDate LocalDate,
+    comments TextBlob,
+    overallRating String
+}
+
+entity SkillSet{
+    name String
+    profieciencyLevel ProficiencyLevel,
+    lastAssessedDate LocalDate
+}
+
+relationship OneToMany {
+    Department{employee} to Employee{department(departmentName)}
+}
+
+relationship ManyToMany {
+     Employee{skillSet(name)} to SkillSet{employee(employeeId)}
+     Employee{competency(competencyName)} to Competency{employee(employeeId)}
+}
+
+relationship OneToMany {
+    Employee{employeeTraining} to EmployeeTraining{employee}
+    Employee{performanceReview} to PerformanceReview{employee}
+    Employee{reviewer} to PerformanceReview{reviewer}
+}
+
+relationship ManyToOne {
+    EmployeeTraining{trainingProgram} to TrainingProgram
+}
+
+enum EmployeeStatus {
+    ACTIVE,
+    INACTIVE,
+    TERMINATED
+}
+
+enum ProficiencyLevel{
+    BEGINNER, INTERMEDIATE, PROFICIENT
+}
+
+enum EmployeePosition {
+    SOFTWARE_ENGINEER, TRAINEE, MANAGER, BUSINESS_ANALYST, TESTER, UNQUORK_CONFIGURATOR, PM, HR, ARCHITECT
+}
+
+dto * with mapstruct
+filter *
+paginate * with pagination

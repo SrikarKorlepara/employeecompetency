@@ -11,7 +11,17 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082237_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082238_added_entity_Employee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082239_added_entity_Competency.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082240_added_entity_TrainingProgram.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082241_added_entity_EmployeeTraining.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082242_added_entity_PerformanceReview.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082243_added_entity_SkillSet.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20240519082238_added_entity_constraints_Employee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082241_added_entity_constraints_EmployeeTraining.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240519082242_added_entity_constraints_PerformanceReview.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

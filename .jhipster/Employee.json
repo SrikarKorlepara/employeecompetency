@@ -1,0 +1,95 @@
+{
+  "annotations": {
+    "changelogDate": "20240519082238"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "employeeId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "position",
+      "fieldType": "EmployeePosition",
+      "fieldValues": "SOFTWARE_ENGINEER,TRAINEE,MANAGER,BUSINESS_ANALYST,TESTER,UNQUORK_CONFIGURATOR,PM,HR,ARCHITECT"
+    },
+    {
+      "fieldName": "dateOfJoining",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "EmployeeStatus",
+      "fieldValues": "ACTIVE,INACTIVE,TERMINATED"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Employee",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "employeeTraining",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "employeeTraining",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "performanceReview",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "performanceReview",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "performanceReview",
+      "otherEntityRelationshipName": "reviewer",
+      "relationshipName": "reviewer",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "skillSet",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "skillSet",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "competencyName",
+      "otherEntityName": "competency",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "competency",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityField": "departmentName",
+      "otherEntityName": "department",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "department",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

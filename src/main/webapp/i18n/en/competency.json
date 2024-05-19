@@ -1,0 +1,27 @@
+{
+  "employeeinfoApp": {
+    "competency": {
+      "home": {
+        "title": "Competencies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Competency",
+        "createOrEditLabel": "Create or edit a Competency",
+        "notFound": "No Competencies found"
+      },
+      "created": "A new Competency is created with identifier {{ param }}",
+      "updated": "A Competency is updated with identifier {{ param }}",
+      "deleted": "A Competency is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competency {{ id }}?"
+      },
+      "detail": {
+        "title": "Competency"
+      },
+      "id": "ID",
+      "competencyId": "Competency Id",
+      "competencyName": "Competency Name",
+      "description": "Description",
+      "employee": "Employee"
+    }
+  }
+}

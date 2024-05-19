@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20240519082243"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profieciencyLevel",
+      "fieldType": "ProficiencyLevel",
+      "fieldValues": "BEGINNER,INTERMEDIATE,PROFICIENT"
+    },
+    {
+      "fieldName": "lastAssessedDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "SkillSet",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "employeeId",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "skillSet",
+      "relationshipName": "employee",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
