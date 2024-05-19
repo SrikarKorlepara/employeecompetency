@@ -22,8 +22,10 @@ public interface EmployeeMapper extends EntityMapper<EmployeeDTO, Employee> {
     @Mapping(target = "department", source = "department", qualifiedByName = "departmentDepartmentName")
     EmployeeDTO toDto(Employee s);
 
-    @Mapping(target = "removeSkillSet", ignore = true)
-    @Mapping(target = "removeCompetency", ignore = true)
+    //    @Mapping(target = "removeSkillSet", ignore = true)
+    //    @Mapping(target = "removeCompetency", ignore = true)
+    @Mapping(target = "skillSets", ignore = true)
+    @Mapping(target = "competencies", ignore = true)
     Employee toEntity(EmployeeDTO employeeDTO);
 
     @Named("skillSetName")
